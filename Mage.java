@@ -1,7 +1,7 @@
 public class Mage extends Character {
 
     public Mage(String name) {
-        super(name, "Mage", 115);
+        super(name, "Mage", 15);
     }
 
 	@Override
