@@ -1,5 +1,3 @@
-package RPG;
-
 public class Game {
     static Character fight(Character c1, Character c2) {
         int turn = 0;

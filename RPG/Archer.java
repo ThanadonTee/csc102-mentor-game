@@ -1,5 +1,3 @@
-package RPG;
-
 public class Archer extends Character {
 
     public Archer(String name) {

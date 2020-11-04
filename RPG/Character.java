@@ -1,5 +1,3 @@
-package RPG;
-
 public class Character {
     private String name;
     private double HP;
