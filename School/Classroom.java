@@ -18,17 +18,23 @@ public class Classroom {
         return this.capacity;
     }
 
-    public int getAllStudent() {
-        int count=0;
+    public void getAllStudent() {
         for (People p : people) {
             if (p.getRole().equals("Student")) {
-                count++;
+                System.out.println(p.getName());
             }
         }
-        return count;
+    }
+
+    public void getAllTeacher() {
+        for (People p : people) {
+            if (p.getRole().equals("Teacher")) {
+                System.out.println(p.getName());
+            }
+        }
     }
     
-    public int getAllTeacher() {
+    public int getTeacherCount() {
         int count = 0;
         for (People p : people) {
             if (p.getRole().equals("Teacher")) {
@@ -43,7 +49,7 @@ public class Classroom {
             System.out.println("This Classroom is at full capacity.");
             return;
         }
-        if (getAllTeacher() >= maxTeacher) {
+        if (getTeacherCount() >= maxTeacher) {
             System.out.println("This Classroom already have maximum amount of Teacher");
             return;
         }
