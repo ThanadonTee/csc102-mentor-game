@@ -1,3 +1,5 @@
+package RPG;
+
 public class Swordman extends Character {
 
     public Swordman(String name) {

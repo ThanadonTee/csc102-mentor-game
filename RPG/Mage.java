@@ -1,3 +1,5 @@
+package RPG;
+
 public class Mage extends Character {
 
     public Mage(String name) {
